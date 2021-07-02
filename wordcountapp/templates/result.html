@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>결과화면 입니다. </h1>
+    <h3>전체 원문 : </h3>
+    {{full_text}} 
+    <p>전체 단어의 개수는 : {{word_len}} </p>
+    {% for word,count in word_list %}
+        {{word}} :{{count}} 
+        <br>
+    {% endfor %}
+    
+
+</body>
+</html>
